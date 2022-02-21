@@ -1,8 +1,13 @@
+
+h1 { font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; } h3 { font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 15.4px; } p { font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px; } blockquote { font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 30px; } pre { font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif; font-size: 13px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 18.5714px; }
+
+
 *{
     font-family: 'Questrial', sans-serif;
 }
 body{
     margin:0;
+    background-color: #26262c;
 }
 
 .container{
@@ -15,14 +20,13 @@ body{
     background-color: #26262c;
     width:20%;
     height: 100%;
-    position: fixed;
     color:white;
+    display: inline-block;
 }
 
 .sidebar .user-content{
-    margin: 10px;
-    overflow: hidden;
-    
+padding: 3px;
+overflow: hidden;    
 }
 
 .sidebar .user-content img{
@@ -102,3 +106,87 @@ content: "";
  left:0;
  border-radius: 4px;
 }
+
+
+/* tasks */
+
+
+.tasks{
+    background-color: cadetblue;
+    display: inline-block;
+    width: 60%;
+    height: 100%;
+    position:absolute;
+    border-top-left-radius: 10px;
+    background-image: url("https://source.unsplash.com/random/1080x1080?sig=1");
+    background-size: cover;
+}
+
+.task-container{
+    width: 75%;
+    height: 80%;
+    margin:20px auto;
+    overflow-y: auto;
+    
+}
+
+.task-item{
+    width:95%;
+    height:50px;
+    box-sizing: border-box;
+    padding: 14px 10px 10px 10px;
+    background-color: #1c1c21;
+    border-radius: 10px;
+    margin:5px auto;
+    color:white;
+    font-size: 20px;
+
+}
+
+.task-item:hover{
+    background-color: #37373d;
+}
+
+.tasks input{
+    color:white;
+    display: block;
+    margin:0 auto;
+    width:90%;
+    padding: 5px;
+    padding-left: 56px;
+    height: 50px;
+   /* From https://css.glass */
+background: rgba(36, 34, 34, 0.41);
+border-radius: 3px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(10.8px);
+-webkit-backdrop-filter: blur(10.8px);
+border: 1px solid rgba(255, 255, 255, 0.58);
+font-size: 18px;
+border:none;
+}
+
+.tasks input:focus{
+outline:none;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 4px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(63, 63, 63);
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
