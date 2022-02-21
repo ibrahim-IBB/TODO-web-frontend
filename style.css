@@ -1,0 +1,104 @@
+*{
+    font-family: 'Questrial', sans-serif;
+}
+body{
+    margin:0;
+}
+
+.container{
+    
+    margin:0 auto;
+    width: 80%;
+}
+
+.sidebar{
+    background-color: #26262c;
+    width:20%;
+    height: 100%;
+    position: fixed;
+    color:white;
+}
+
+.sidebar .user-content{
+    margin: 10px;
+    overflow: hidden;
+    
+}
+
+.sidebar .user-content img{
+width:55px;
+height: 55px;
+border-radius: 100%;
+float:left;
+margin-right: 10px;
+}
+
+.sidebar .user-title{
+    margin: 7px 0 4px 0 ;
+    display: inline-block;
+    font-size: 15px;
+}
+.sidebar .user-email{
+    display: inline-block;
+}
+
+.sidebar input{
+width: 90%;
+display: block;
+margin: 10px auto;
+background-color: #1c1c21;
+border:none;
+border-bottom: 1px solid #6495ff;
+color:white;
+padding: 10px;
+border-radius: 5px;
+outline: 0.001em solid #39393f;
+}
+
+.sidebar input:focus{
+    border-bottom: 2px solid #6495ff;
+    box-shadow: 0 1px 2px #6495ff;
+}
+
+.input-group{
+position: relative;
+
+}
+
+
+.sidebar-link-item{
+    box-sizing: border-box;
+    padding: 9px;
+    font-size: 18px;
+    width: 97%;
+    border-radius: 5px;
+    margin:5px auto;
+    position: relative;
+}
+
+
+
+.sidebar-link-item:hover{
+    background-color: #3e3e46;
+
+}
+
+.sidebar-link-item span{
+    margin-left:15px;
+}
+
+.sidebar-link-item.active{
+    background-color: #3e3e46;
+}
+
+
+.sidebar-link-item.active::after{
+    position:absolute;
+content: "";
+ width:3px;
+ height:15px;
+ background-color: #6495ff;
+ top:11px;
+ left:0;
+ border-radius: 4px;
+}
