@@ -200,3 +200,50 @@ outline:none;
   ::-webkit-scrollbar-thumb:hover {
     background: #555;
   }
+
+
+  @media (max-width:556px) {
+      .sidebar{
+          display: none;
+      }
+      .tasks{
+          width: 100%;
+      }
+  }
+
+  @media (max-width:1074px) {
+
+    .sidebar .user-content img{
+        float: none;
+    }
+      .user-content .user-title{
+          float:none;
+          display: block;
+      }
+      
+      .user-content .user-email{
+        float:none;
+        display: block;
+    }
+
+    .sidebar-link-item span{
+        font-size: 13px;
+    }
+  }
+
+
+  @media (max-width:814px) {
+    .sidebar .user-content img{
+        float: none;
+        display: none;
+    }
+      .user-content .user-title{
+          float:none;
+          display: none;
+      }
+      
+      .user-content .user-email{
+        float:none;
+        display: none;
+    }  
+  }
